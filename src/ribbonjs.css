@@ -1,0 +1,107 @@
+.ribbonjs,
+.ribbonjs a,
+.ribbonjs a:hover {
+  /* The right and left classes determine the side we attach our banner to */
+  position: absolute;
+
+  /* pretty background color */
+  background-image: radial-gradient( circle at 50% 50%, #815dc1 29%, #4e2a8e 120%);
+
+  /* Set the text properties */
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  /* Set the geometry. If you fiddle with these you'll also need
+     to tweak the top and right values in .ribbonjs. */
+  width: 200px;
+  line-height: 20px;
+
+  /* Set the layout properties */
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.ribbonjs-wrapper {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+
+  /*z-index: 9999;*/
+
+  pointer-events: none;
+}
+
+.ribbonjs-wrapper.fixed {
+  position: fixed;
+}
+
+.ribbonjs-wrapper.left {
+  left: 0;
+}
+
+.ribbonjs-wrapper.right {
+  right: 0;
+}
+
+.ribbonjs-wrapper.left-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  left: 0;
+}
+
+.ribbonjs-wrapper.right-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  right: 0;
+}
+
+.ribbonjs-wrapper.right .ribbonjs {
+  top: 42px;
+  right: -43px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ribbonjs-wrapper.left .ribbonjs {
+  top: 42px;
+  left: -43px;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+.ribbonjs-wrapper.left-bottom .ribbonjs {
+  top: 80px;
+  left: -43px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ribbonjs-wrapper.right-bottom .ribbonjs {
+  top: 80px;
+  right: -43px;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
